@@ -1,0 +1,34 @@
+# Dependencias de Node
+node_modules/
+
+# Archivos de registro
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Archivos de entorno
+.env
+.env.local
+.env.*.local
+
+# Archivos de configuración de módulos de Node (si los tienes)
+.eslintcache
+.parcel-cache/
+.next/
+.cache/
+
+# Archivos de compilación o distribución
+dist/
+build/
+out/
+
+# Configuración de directorios y sistemas operativos
+.DS_Store
+Thumbs.db
+
+# Archivos de IDE
+.vscode/
+.idea/
+
+# Otros
+*.log

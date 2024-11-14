@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="shortcut icon" href="./assets/img/logo.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+     -->
+  <link rel="stylesheet" href="./dist/styles.css" />
+  <title>CONSULTORÍAS</title>
+</head>
+
+<body class="text-primary antialiased">
+  <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-4">
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a href="#" class="inline-block mr-4">
+          <div class="flex items-center bg-white/10 px-3 py-1 rounded-xl">
+            <span class="text-accent-blue-400 text-3xl font-bold">CONSUL</span>
+            <span class="text-primary text-3xl font-bold">TORÍAS</span>
+          </div>
+        </a>
+        <button
+          class="cursor-pointer text-2xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+          type="button" onclick="toggleNavbar('example-collapse-navbar')">
+          <i class="text-secondary fas fa-bars"></i>
+        </button>
+      </div>
+
+      <div class="lg:flex flex-grow items-center bg-secondary lg:bg-transparent lg:shadow-none hidden"
+        id="example-collapse-navbar">
+        <!--         <ul class="flex flex-col lg:flex-row list-none mr-auto">
+          <li class="flex items-center">
+            <a class="lg:text-secondary lg:hover:text-neutral-medium text-primary px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
+              href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/landing"><i
+                class="lg:text-neutral-medium text-neutral-medium far fa-file-alt text-2xl leading-lg mr-2"></i>
+              Docs</a>
+          </li>
+        </ul> -->
+        <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+          <li class="flex items-center">
+            <a class="lg:text-secondary lg:hover:text-neutral-medium text-primary px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
+              href="#pablo"><i
+                class="lg:text-neutral-medium text-neutral-medium fab fa-facebook text-2xl leading-lg"></i><span
+                class="lg:hidden inline-block ml-2">Share</span></a>
+          </li>
+          <li class="flex items-center">
+            <a class="lg:text-secondary lg:hover:text-neutral-medium text-primary px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
+              href="#pablo"><i
+                class="lg:text-neutral-medium text-neutral-medium fab fa-twitter text-2xl leading-lg"></i><span
+                class="lg:hidden inline-block ml-2">Tweet</span></a>
+          </li>
+          <li class="flex items-center">
+            <a class="lg:text-secondary lg:hover:text-neutral-medium text-primary px-3 py-4 lg:py-2 flex items-center text-sm uppercase font-bold"
+              href="#pablo"><i
+                class="lg:text-neutral-medium text-neutral-medium fab fa-github text-2xl leading-lg"></i><span
+                class="lg:hidden inline-block ml-2">Star</span></a>
+          </li>
+          <!--           <li class="flex items-center">
+            <button
+              class="bg-secondary text-primary active:bg-neutral-light text-sm font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3"
+              type="button" style="transition: all 0.15s ease 0s;">
+              <i class="fas fa-arrow-alt-circle-down"></i> Download
+            </button>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center" style="min-height: 75vh;">
+      <div class="absolute top-0 w-full h-full bg-center bg-cover" data-aos="fade-in" data-aos-duration="1500"
+        style='background-image: url("https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1267&amp;q=80");'>
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-overlay-black"></span>
+      </div>
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+          <div class="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <div class="rounded-lg" data-aos="zoom-in" data-aos-delay="700">
+                <img src="assets/img/logo.png" alt="Logo de la Empresa"
+                  class="mx-auto w-auto bg-white/20 p-2 rounded-3xl">
+              </div>
+              <p id="animacion-texto" class="mt-4 text-2xl font-bold neutral-light text-secondary" data-aos="fade-up"
+                data-aos-delay="900">
+                Bienvenido a CIC Consultorías
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 70px;">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-neutral.medium fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+    </div>
+
+    <section class="pb-20 bg-primary -mt-24">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center">
+          
+          <div class="lg:pt-12 pt-6 w-full lg:w-3/12 px-4 text-center lg:mb-8" style="align-self: flex-start;"
+            data-aos="fade-up">
+            <div class="relative flex flex-col min-w-0 break-words bg-secondary w-full shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-secondary p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-accent-red">
+                  <i class="fas fa-laptop-house"></i>
+                </div>
+                <h6 class="text-2xl font-semibold">Asistencia Informática en el Hogar</h6>
+                <p class="mt-2 mb-4 text-neutral-dark text-xl">
+                  Ofrecemos soporte técnico a domicilio para resolver problemas informáticos en el hogar.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Asistencia Legal -->
+          <!-- <div class="lg:pt-12 pt-6 w-full lg:w-3/12 px-4 text-center lg:mb-8" style="align-self: flex-end;" data-aos="fade-down">
+            <div class="relative flex flex-col min-w-0 break-words bg-secondary w-full shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-secondary p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-accent-blue-400">
+                  <i class="fas fa-balance-scale"></i>
+                </div>
+                <h6 class="text-2xl font-semibold">Asistencia Legal</h6>
+                <p class="mt-2 mb-4 text-neutral-dark">
+                  Brindamos asesoría y asistencia en temas legales, adaptada a tus necesidades.
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Cursos -->
+          <!-- <div class="lg:pt-12 pt-6 w-full lg:w-3/12 px-4 text-center lg:mb-8" style="align-self: flex-start;" data-aos="fade-up">
+            <div class="relative flex flex-col min-w-0 break-words bg-secondary w-full shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-secondary p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-accent-green">
+                  <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h6 class="text-2xl font-semibold">Cursos</h6>
+                <p class="mt-2 mb-4 text-neutral-dark">
+                  Ofrecemos una variedad de cursos especializados para mejorar tus habilidades.
+                </p>
+              </div>
+            </div>
+          </div> -->
+
+          
+          <div class="pt-6 w-full lg:w-3/12 px-4 text-center lg:mb-8" style="align-self: flex-end;"
+            data-aos="fade-down">
+            <div class="relative flex flex-col min-w-0 break-words bg-secondary w-full shadow-lg rounded-lg">
+              <div class="px-4 py-5 flex-auto">
+                <div
+                  class="text-secondary p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-accent-blue-600">
+                  <i class="fas fa-cogs"></i>
+                </div>
+                <h6 class="text-2xl font-semibold">Desarrollos a la Medida</h6>
+                <p class="mt-2 mb-4 text-neutral-dark text-xl">
+                  Creamos soluciones tecnológicas personalizadas para tu negocio.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-wrap items-center mt-24">
+        <div class="w-full md:w-5/12 px-4 mr-auto ml-auto" data-aos="fade-right" data-aos-duration="1000">
+          <div
+            class="neutral-light p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full text-secondary"
+            data-aos="zoom-in" data-aos-delay="200">
+            <i class="fas fa-user-friends text-2xl"></i>
+          </div>
+          <h3 class="text-4xl mb-2 font-bold leading-normal text-secondary" data-aos="fade-up" data-aos-delay="400">
+            Trabajar con nosotros es una garantía de calidad y experiencia
+          </h3>
+          <p class="text-2xl font-light leading-relaxed mt-4 mb-4 text-secondary" data-aos="fade-up"
+            data-aos-delay="600">
+            En CIC Consultorías, brindamos soluciones innovadoras en consultoría que combinan tecnología avanzada con
+            un enfoque personalizado, adaptándonos a las necesidades de cada cliente para lograr un impacto positivo
+            y medible en sus procesos y resultados.
+          </p>
+          <p class="text-2xl font-light leading-relaxed mt-0 mb-4 text-secondary" data-aos="fade-up"
+            data-aos-delay="800">
+            Nuestra misión es apoyar a las empresas en su desarrollo sostenible y éxito mediante estrategias y
+            soluciones
+            prácticas. Nos enfocamos en áreas clave como la optimización de procesos, análisis de datos y soluciones
+            tecnológicas personalizadas.
+          </p>
+          <a href="https://www.cicconsultorias.com" class="font-bold text-primary mt-8" data-aos="fade-up"
+            data-aos-delay="1000">Conoce más sobre nuestros servicios</a>
+        </div>
+        <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="fade-left" data-aos-duration="1000">
+          <div
+            class="relative flex flex-col min-w-0 break-words bg-secondary w-full mb-6 shadow-lg rounded-lg bg-accent-pink"
+            data-aos="zoom-in" data-aos-delay="200">
+            <img alt="Inteligencia Artificial Ayudando a Humanos"
+              src="assets/img/inteligencia-artificial-ayudando-humanos.jpg" class="w-full align-middle rounded-t-lg"
+              data-aos="zoom-in" data-aos-delay="400" />
+            <blockquote class="relative p-8 mb-4" data-aos="fade-up" data-aos-delay="600">
+              <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95"
+                class="absolute left-0 w-full block" style="height: 95px; top: -94px;">
+                <polygon points="-30,95 583,95 583,65" class="text-accent-blue-400 fill-current"></polygon>
+              </svg>
+              <h4 class="text-3xl font-bold text-primary" data-aos="fade-up" data-aos-delay="800">
+                Servicios de Excelencia
+              </h4>
+              <p class="text-2xl mt-2 text-neutral-dark" data-aos="fade-up" data-aos-delay="1000">
+                Nos destacamos en proveer servicios de consultoría altamente especializados, utilizando herramientas de
+                inteligencia artificial y análisis de datos que permiten a nuestros clientes tomar decisiones basadas en
+                evidencia y datos concretos.
+              </p>
+            </blockquote>
+          </div>
+
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <section class="relative py-20">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-secondary fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="fade-right" data-aos-duration="1000">
+            <img alt="Inteligencia Artificial" class="max-w-full rounded-lg shadow-lg"
+              src="assets/img/inteligencia-articial-manos.jpg" data-aos="zoom-in" data-aos-delay="200" />
+          </div>
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="fade-left" data-aos-duration="1000">
+            <div class="md:pr-12">
+              <div
+                class="text-secondary p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-accent-pink-300"
+                data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-chart-line text-2xl"></i> 
+              </div>
+              <h3 class="text-3xl font-semibold" data-aos="fade-up" data-aos-delay="400">Una empresa en constante
+                crecimiento</h3>
+              <p class="mt-4 text-2xl leading-relaxed text-neutral-dark" data-aos="fade-up" data-aos-delay="500">
+                En CIC Consultorías, nuestro compromiso es brindar asesoría especializada y soluciones estratégicas a
+                nuestros clientes para asegurar su desarrollo y crecimiento en un mercado competitivo.
+              </p>
+              <ul class="list-none mt-6">
+                <li class="py-2" data-aos="fade-up" data-aos-delay="600">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-secondary bg-accent-pink-200 mr-3">
+                        <i class="fas fa-cogs"></i> 
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-neutral-dark text-xl">Soluciones Personalizadas</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2" data-aos="fade-up" data-aos-delay="700">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-secondary bg-accent-pink-200 mr-3">
+                        <i class="fas fa-chalkboard-teacher"></i> 
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-neutral-dark text-xl">Asesoría y Capacitación</h4>
+                    </div>
+                  </div>
+                </li>
+                <li class="py-2" data-aos="fade-up" data-aos-delay="800">
+                  <div class="flex items-center">
+                    <div>
+                      <span
+                        class="text-sm font-semibold inline-block py-1 px-2 uppercase rounded-full text-secondary bg-accent-pink-200 mr-3">
+                        <i class="fas fa-tools"></i> 
+                      </span>
+                    </div>
+                    <div>
+                      <h4 class="text-neutral-dark text-xl">Implementación Eficaz</h4>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Nuestro equipo -->
+    <!-- <section class="pt-20 pb-48">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold">Here are our heroes</h2>
+            <p class="text-2xl leading-relaxed m-4 text-neutral-dark">
+              According to the National Oceanic and Atmospheric
+              Administration, Ted, Scambos, NSIDClead scentist, puts the
+              potentially record maximum.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img alt="..." src="./assets/img/team-1-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-2xl font-bold">Ryan Tompson</h5>
+                <p class="mt-1 text-sm text-neutral-medium uppercase font-semibold">
+                  Web Developer
+                </p>
+                <div class="mt-6">
+                  <button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-twitter"></i></button><button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-facebook-f"></i></button><button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-dribbble"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img alt="..." src="./assets/img/team-2-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-2xl font-bold">Romina Hadid</h5>
+                <p class="mt-1 text-sm text-neutral-medium uppercase font-semibold">
+                  Marketing Specialist
+                </p>
+                <div class="mt-6">
+                  <button
+                    class="bg-accent-red text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-google"></i></button><button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-facebook-f"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img alt="..." src="./assets/img/team-3-800x800.jpg" class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-2xl font-bold">Alexa Smith</h5>
+                <p class="mt-1 text-sm text-neutral-medium uppercase font-semibold">
+                  UI/UX Designer
+                </p>
+                <div class="mt-6">
+                  <button
+                    class="bg-accent-red text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-google"></i></button><button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-twitter"></i></button><button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
+            <div class="px-6">
+              <img alt="..." src="./assets/img/team-4-470x470.png" class="shadow-lg rounded-full max-w-full mx-auto"
+                style="max-width: 120px;" />
+              <div class="pt-6 text-center">
+                <h5 class="text-2xl font-bold">Jenna Kardi</h5>
+                <p class="mt-1 text-sm text-neutral-medium uppercase font-semibold">
+                  Founder and CEO
+                </p>
+                <div class="mt-6">
+                  <button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-dribbble"></i></button><button
+                    class="bg-accent-red text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-google"></i></button><button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-twitter"></i></button><button
+                    class="bg-accent-pink-500 text-secondary w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1"
+                    type="button">
+                    <i class="fab fa-instagram"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="pb-20 relative block bg-background">
+      <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 80px;">
+        <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+          <polygon class="text-background fill-current" points="2560 0 2560 100 0 100"></polygon>
+        </svg>
+      </div>
+      <div class="container mx-auto px-4 lg:pt-24">
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 px-4" data-aos="fade-up" data-aos-duration="1000">
+            <h2 class="text-4xl font-semibold text-secondary">Impulsando tu Negocio con Tecnología</h2>
+            <p class="text-2xl leading-relaxed mt-4 mb-4 text-neutral-light">
+              En CIC Consultorías, ofrecemos servicios especializados para optimizar los procesos empresariales
+              mediante el uso de tecnología avanzada, adaptándonos a las necesidades de nuestros clientes.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap mt-12 justify-center">
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="text-secondary p-3 w-12 h-12 shadow-lg rounded-full bg-primary inline-flex items-center justify-center">
+              <i class="fas fa-handshake text-2xl text-secondary"></i> 
+            </div>
+            <h6 class="text-3xl mt-5 font-semibold text-secondary">
+              Consultoría Estratégica
+            </h6>
+            <p class="mt-2 mb-4 text-neutral-light text-xl">
+              Ayudamos a las empresas a identificar oportunidades de mejora y a definir estrategias que impulsen
+              su crecimiento y competitividad en el mercado.
+            </p>
+          </div>
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div
+              class="text-secondary p-3 w-12 h-12 shadow-lg rounded-full bg-primary inline-flex items-center justify-center">
+              <i class="fas fa-chart-line text-2xl text-secondary"></i> 
+            </div>
+            <h5 class="text-3xl mt-5 font-semibold text-secondary">
+              Optimización de Procesos
+            </h5>
+            <p class="mt-2 mb-4 text-neutral-light text-xl">
+              Implementamos herramientas y metodologías para mejorar la eficiencia y productividad de los procesos
+              operativos en tu organización.
+            </p>
+          </div>
+          <div class="w-full lg:w-3/12 px-4 text-center" data-aos="fade-up" data-aos-delay="600">
+            <div
+              class="text-secondary p-3 w-12 h-12 shadow-lg rounded-full bg-primary inline-flex items-center justify-center">
+              <i class="fas fa-brain text-2xl text-secondary"></i> 
+            </div>
+            <h5 class="text-3xl mt-5 font-semibold text-secondary">Innovación y Transformación Digital</h5>
+            <p class="mt-2 mb-4 text-neutral-light text-xl">
+              Apoyamos a las empresas en la adopción de tecnologías innovadoras y en su proceso de transformación
+              digital para mejorar su competitividad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- <section class="relative block py-24 lg:pt-0 bg-background">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-6/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-secondary">
+              <div class="flex-auto p-5 lg:p-10">
+                <h4 class="text-2xl font-semibold text-neutral-darkest">Want to work with us?</h4>
+                <p class="leading-relaxed mt-1 mb-4 text-neutral-dark">
+                  Complete this form and we will get back to you in 24 hours.
+                </p>
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="block uppercase text-neutral-darkest text-sm font-bold mb-2" for="full-name">Full
+                    Name</label>
+                  <input type="text"
+                    class="border border-neutral-medium px-3 py-3 placeholder-neutral-dark text-neutral-darkest bg-secondary rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    placeholder="Full Name" style="transition: all 0.15s ease 0s;" />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-neutral-darkest text-sm font-bold mb-2" for="email">Email</label>
+                  <input type="email"
+                    class="border border-neutral-medium px-3 py-3 placeholder-neutral-dark text-neutral-darkest bg-secondary rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    placeholder="Email" style="transition: all 0.15s ease 0s;" />
+                </div>
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-neutral-darkest text-sm font-bold mb-2"
+                    for="message">Message</label>
+                  <textarea rows="4" cols="80"
+                    class="border border-neutral-medium px-3 py-3 placeholder-neutral-dark text-neutral-darkest bg-secondary rounded text-sm shadow focus:outline-none focus:ring w-full"
+                    placeholder="Type a message..."></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-accent-blue-600 text-secondary active:bg-accent-blue-400 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button" style="transition: all 0.15s ease 0s;">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+  </main>
+  <footer class="relative bg-accent-blue-600 pt-16 pb-8 text-neutral-light">
+    <div class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 80px;">
+      <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+        version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+        <polygon class="text-accent-blue-600 fill-current" points="2560 0 2560 100 0 100"></polygon>
+      </svg>
+    </div>
+    
+    <div class="container mx-auto px-4">
+      
+      <div class="flex flex-wrap items-center justify-center text-center lg:text-left mb-10">
+        <div class="w-full lg:w-5/12 px-4 mb-8 lg:mb-0" data-aos="fade-up" data-aos-duration="1000">
+          <h4 class="text-4xl font-bold text-white mb-4 hover:text-primary transition duration-300 text-center">Contáctanos</h4>
+          <p class="text-lg text-gray-300 mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            Estamos aquí para ayudarte a llevar tu negocio al siguiente nivel. Ponte en contacto con nosotros a través de los siguientes medios.
+          </p>
+          
+          <div class="space-y-2 text-lg text-gray-200">
+            <p class="hover:text-primary transition duration-300" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-map-marker-alt mr-2"></i> Calle 19 No. 04-20 Oficina 401, Edificio el Emperador
+            </p>
+            <p class="hover:text-primary transition duration-300" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-envelope mr-2"></i>
+              <a href="mailto:presidencia@cicconsultoria.com" class="hover:text-primary">presidencia@cicconsultoria.com</a>
+            </p>
+            <p class="hover:text-primary transition duration-300" data-aos="fade-up" data-aos-delay="800">
+              <i class="fab fa-whatsapp mr-2"></i>
+              <a href="https://wa.me/3225383826" class="hover:text-primary">322 5383826</a>
+            </p>
+          </div>
+        </div>
+    
+        
+        <div class="w-full lg:w-4/12 px-4 flex flex-col justify-center items-center" data-aos="fade-left" data-aos-duration="1000">
+          <h4 class="text-4xl font-bold text-white mb-4 hover:text-primary transition duration-300">Síguenos</h4>
+          <div class="flex justify-center lg:justify-start space-x-6">
+            <a href="#" class="bg-primary hover:bg-primary-dark text-white shadow-lg h-14 w-14 flex items-center justify-center rounded-full transition duration-300 transform hover:scale-110 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="200">
+              <i class="fab fa-facebook-f text-2xl"></i>
+            </a>
+            <a href="#" class="bg-primary hover:bg-primary-dark text-white shadow-lg h-14 w-14 flex items-center justify-center rounded-full transition duration-300 transform hover:scale-110 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="400">
+              <i class="fab fa-instagram text-2xl"></i>
+            </a>
+            <a href="#" class="bg-primary hover:bg-primary-dark text-white shadow-lg h-14 w-14 flex items-center justify-center rounded-full transition duration-300 transform hover:scale-110 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="600">
+              <i class="fab fa-linkedin-in text-2xl"></i>
+            </a>
+            <a href="#" class="bg-primary hover:bg-primary-dark text-white shadow-lg h-14 w-14 flex items-center justify-center rounded-full transition duration-300 transform hover:scale-110 hover:shadow-xl" data-aos="zoom-in" data-aos-delay="800">
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+      
+      <div class="flex justify-center">
+        <div class="w-3/4 border-t border-gray-400 opacity-50 mb-8"></div>
+      </div>
+    
+      
+      <div class="flex justify-center">
+        <p class="text-sm text-gray-400 font-semibold py-1 transition duration-300 hover:text-primary">
+          &copy; <script>document.write(new Date().getFullYear());</script> CIC Consultorías. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>  
+  
+
+
+</body>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+</script>
+<script>
+  new TypeIt("#animacion-texto", {
+    strings: [
+      "No te quedes en el pasado, te ayudamos a digitalizar tu empresa",
+      "Transforma tu empresa con nosotros",
+      "Digitalización a tu alcance"
+    ],
+    speed: 40,           // Velocidad de escritura
+    deleteSpeed: 30,     // Velocidad de borrado
+    breakLines: false,   // Sin saltos de línea
+    loop: true,          // Repetir indefinidamente
+    waitUntilVisible: true, // Inicia la animación cuando el elemento es visible
+  }).go();
+</script>
+
+<script>
+  function toggleNavbar(collapseID) {
+    document.getElementById(collapseID).classList.toggle("hidden");
+    document.getElementById(collapseID).classList.toggle("block");
+  }
+</script>
+
+</html>
